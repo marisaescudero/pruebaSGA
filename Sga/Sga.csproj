@@ -79,6 +79,12 @@
     <Compile Include="formBienvenida.Designer.cs">
       <DependentUpon>formBienvenida.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCerrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCerrar.Designer.cs">
+      <DependentUpon>frmCerrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHorarioAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formBienvenida.resx">
       <DependentUpon>formBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCerrar.resx">
+      <DependentUpon>frmCerrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHorarioAlumno.resx">
       <DependentUpon>frmHorarioAlumno.cs</DependentUpon>
