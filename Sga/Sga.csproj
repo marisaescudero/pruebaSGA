@@ -91,6 +91,12 @@
     <Compile Include="frmHorarioProfesor.Designer.cs">
       <DependentUpon>frmHorarioProfesor.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMensajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMensajes.Designer.cs">
+      <DependentUpon>frmMensajes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHorarioProfesor.resx">
       <DependentUpon>frmHorarioProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMensajes.resx">
+      <DependentUpon>frmMensajes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
