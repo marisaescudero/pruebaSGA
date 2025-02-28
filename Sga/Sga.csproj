@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28FC4298-B116-43FB-AE8F-BCF6D7473788}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sga</RootNamespace>
+    <AssemblyName>Sga</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asistencia.Designer.cs">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asistencia00.Designer.cs">
+      <DependentUpon>Asistencia00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexión_BDD.cs" />
+    <Compile Include="C_el_Registro.cs" />
+    <Compile Include="C_verificar_login.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBienvenida.Designer.cs">
+      <DependentUpon>formBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHorarioAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHorarioAlumno.Designer.cs">
+      <DependentUpon>frmHorarioAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHorarioProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHorarioProfesor.Designer.cs">
+      <DependentUpon>frmHorarioProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Profesor.Designer.cs">
+      <DependentUpon>Menu_Profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formvacio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formvacio.Designer.cs">
+      <DependentUpon>formvacio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_profesor.Designer.cs">
+      <DependentUpon>Registro_profesor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Asistencia.resx">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asistencia00.resx">
+      <DependentUpon>Asistencia00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBienvenida.resx">
+      <DependentUpon>formBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHorarioAlumno.resx">
+      <DependentUpon>frmHorarioAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHorarioProfesor.resx">
+      <DependentUpon>frmHorarioProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Profesor.resx">
+      <DependentUpon>Menu_Profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formvacio.resx">
+      <DependentUpon>formvacio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_profesor.resx">
+      <DependentUpon>Registro_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TEJADO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caja vale vrg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-02-14 235307.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarea_pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asistencia_pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horarios_pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mensajes_pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono cerrar FN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moren-hsu-VLaKsTkmVhk-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modern-apartment-with-clean-bright-design-abstract-wallpaper-generated-by-ai-modified %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen_menú_profesor.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-02-25 at 9.40.59 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-02-25 at 8.50.58 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PanelOpciones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguidores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir-amigo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloc-de-dibujo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-de-verificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comunicarse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabecera niños.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelOpcionesME.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panellll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinosaurio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muneca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda-con-las-tareas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recreo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mensaje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo formularios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_niño.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agg_Estudiante1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-02-27 at 12.07.19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aulaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonaceptar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
